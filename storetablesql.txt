@@ -1,0 +1,17 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, brand TEXT, aisle INTEGER, sold INTEGER);
+INSERT INTO store VALUES (1, "coat", "$20.00", "Old Navy", 2, 100);
+INSERT INTO store VALUES (2, "boots", "$30.00", "Cablea's", 5, 50);
+INSERT INTO store VALUES (3, "socks", "$5.00", "Hanes", 6, 200);
+INSERT INTO store VALUES (4, "tents", "$500", "Cablea's", 7, 35);
+INSERT INTO store VALUES (5, "first aid", "$10.00", "First Aid", 8, 500);
+INSERT INTO store VALUES (6, "machete", "$15.00", "Cablea's", 9, 60);
+INSERT INTO store VALUES (7, "fishing pole", "$50.00", "Hot Rod", 10, 80);
+INSERT INTO store VALUES (8, "cooler", "$20.00", "Coolers Inc.", 11, 50);
+INSERT INTO store VALUES (9, "fishing bait", "$10.00", "Cablea's", 11, 65);
+INSERT INTO store VALUES (10, "survival knife", "$30.00", "Cablea's", 9, 20);
+INSERT INTO store VALUES (11, "flashlight", "$10.00", "Ranch and Home", 12, 150);
+INSERT INTO store VALUES (12, "fire starter kit", "$5.00", "Cablea's", 8, 45);
+INSERT INTO store VALUES (13, "rations", "$80.00", "Cablea's", 8, 70);
+INSERT INTO store VALUES (14, "map", "$5.00", "Ranch and Home", 1, 45);
+INSERT INTO store VALUES (15, "compass", "$10.00", "Cablea's", 1, 35);
+select * from store where price >= 5 order by price 
